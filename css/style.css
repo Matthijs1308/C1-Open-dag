@@ -21,20 +21,18 @@ body{
     color: var(--color-primaryText);
 }
 
-
 /* Header */
 header{
     padding: 20px;
     justify-content: space-between;
     display: flex;
     align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 8%;
 }
 
+/* Main */
 main{
-    margin-left: 6%;
+    
 }
 
 .spanOpenDag{
@@ -45,10 +43,12 @@ main{
 .imgLogo{
     height: 50px;
 }
+
 .imgLogoBlank{
     visibility: hidden;
     height: 50px;
 }
+
 iframe{
     position: fixed;
     bottom: 20px;
@@ -58,4 +58,56 @@ iframe{
     border: none;
     border-radius: 12px;
     pointer-events: none;
+    display: none;
 }
+
+.btnSubway{
+    font-family: var(--font-body);
+    background: none;
+    border: none;
+    color: var(--color-primaryText);
+}
+
+.btnSubway:hover{
+    cursor: pointer;
+}
+
+.schoolInfoWrapper {
+    margin-top: 2%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+.schoolInfoText {
+    flex: 1;
+}
+
+.schoolInfoText span {
+    color: #f4c81e; /* your yellow text color */
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.imgSchoolInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pLocation {
+    color: #f4c81e;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.imgCurio {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+

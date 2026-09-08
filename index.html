@@ -8,27 +8,65 @@
     <link rel="preconnect" href="https://www.youtube-nocookie.com">
 </head>
 <body>
-    <header>
-        <img class="imgLogo" src="img/curio-03-geel-logo-rgb.png" alt="Curio Logo">
-        <span class="spanOpenDag" >Open dag</span>
-        <img class="imgLogoBlank" src="img/curio-03-geel-logo-rgb.png" alt="">
-    </header>
-    </div class="wrapper">
+    <div class="wrapper">
+        <header>
+            <img class="imgLogo" src="img/curio-03-geel-logo-rgb.png" alt="Curio Logo">
+            <span class="spanOpenDag">Open dag</span>
+            <img class="imgLogoBlank" src="img/curio-03-geel-logo-rgb.png" alt="">
+        </header>
+    </div>
+
+    <div class="wrapper">
         <main>
-            <script>
-                
-            </script>
-            <iframe width="560" height="315"
+
+            <iframe id="subway" width="560" height="315"
                 src="https://www.youtube.com/embed/QMbXaAuiQSI?autoplay=1&mute=1&loop=1&playlist=QMbXaAuiQSI&controls=0&modestbranding=1"
                 allow="autoplay">
             </iframe>
-            <p>testie</p>
+
+            <div class="schoolInfoWrapper">
+                <div class="schoolInfoText">
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dolorum minus nemo reiciendis quis, error ducimus tenetur! Maxime libero eum laboriosam consequatur, dicta dolores aspernatur, rem ea, eos expedita voluptatem.</span>
+                </div>
+                <div class="imgSchoolInfo">
+                    <div class="pLocation">
+                        <p>terheijdenseweg 350 breda</p>
+                    </div>
+                    <img class="imgCurio" src="img/Sanne Bas - Curio - Knipplein 11-1.jpg" alt="Curio Locatie">
+                </div>
+            </div>
+
+            <div class="schoolInfoWrapper">
+                <div class="imgSchoolInfo">
+                    <div class="pLocation">
+                        <p>terheijdenseweg 350 breda</p>
+                    </div>
+                    <img class="imgCurio" src="img/Sanne Bas - Curio - Knipplein 11-1.jpg" alt="Curio Locatie">
+                </div>
+                <div class="schoolInfoText">
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod dolorum minus nemo reiciendis quis, error ducimus tenetur! Maxime libero eum laboriosam consequatur, dicta dolores aspernatur, rem ea, eos expedita voluptatem.</span>
+                </div>
+                
+            </div>
+
+            <button class="btnSubway" onclick="buttonPress()">subway surfers video</button>
+            <script defer>
+                var test = document.getElementById("subway");
+                test.style.display = "none";
+
+                function buttonPress(){
+                    if (test.style.display == "none"){
+                        test.style.display = "block";
+                    } else {
+                        test.style.display = "none";
+                    }
+                }
+            </script>
+
         </main>
     </div>
-    </div class="wrapper">
-        <footer>
 
-        </footer>
-    </div>
+    <footer>
+    </footer>
 </body>
 </html>
