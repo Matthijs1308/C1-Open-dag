@@ -62,14 +62,18 @@ iframe{
 }
 
 .btnSubway{
-    font-family: var(--font-body);
-    background: none;
+    font-family: #0F3D2E;
+    color: #0F3D2E;
+    background: #F5C518;
     border: none;
-    color: var(--color-primaryText);
+    padding: 15px;
+    font-weight: bold;
 }
 
 .btnSubway:hover{
     cursor: pointer;
+    color: #F5C518;
+    background-color: #0F3D2E;
 }
 
 .schoolInfoWrapper {
@@ -86,7 +90,7 @@ iframe{
 }
 
 .schoolInfoText span {
-    color: #f4c81e; /* your yellow text color */
+    color: #F5C518;
     font-size: 1.1rem;
     line-height: 1.6;
 }
@@ -99,7 +103,7 @@ iframe{
 }
 
 .pLocation {
-    color: #f4c81e;
+    color: #F5C518;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -111,3 +115,34 @@ iframe{
     display: block;
 }
 
+.afterSchoolHeader{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.afterSchoolText{
+    display: flex;
+    text-align: center;
+}
+
+.afterSchoolImages{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.spaceAbove{
+    margin-top: 5%;
+}
+
+.afterSchoolWork{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.boxAfterSchoolWork{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
