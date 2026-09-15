@@ -14,26 +14,33 @@
     --color-primaryText:    #F5C518;
 }
 
-/* Body */
+
 body{
     font-family: var(--font-body);
     background-color: var(--color-background);
     color: var(--color-primaryText);
+
 }
 
-/* Header */
+
+
+.headerBackground{
+    background-image: url('../img/istockphoto-537331500-612x612.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 header{
     padding: 20px;
     justify-content: space-between;
     display: flex;
     align-items: center;
     padding-bottom: 8%;
+
+
 }
 
-/* Main */
-main{
-    
-}
 
 .spanOpenDag{
     font-weight: 900;
@@ -61,8 +68,13 @@ iframe{
     display: none;
 }
 
+.uitleg{
+    text-align: center;
+    margin-top: 1%;
+}
+
 .btnSubway{
-    font-family: #0F3D2E;
+    margin-top: 3%;
     color: #0F3D2E;
     background: #F5C518;
     border: none;
@@ -77,7 +89,7 @@ iframe{
 }
 
 .schoolInfoWrapper {
-    margin-top: 2%;
+    margin-top: 3%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -87,6 +99,9 @@ iframe{
 
 .schoolInfoText {
     flex: 1;
+    background-color: rgb(119, 80, 80);
+    padding: 20px;
+    border-radius: 15px;
 }
 
 .schoolInfoText span {
@@ -110,7 +125,7 @@ iframe{
 
 .imgCurio {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
     display: block;
 }
@@ -122,9 +137,9 @@ iframe{
     justify-content: center;
 }
 
-.afterSchoolText{
+.afterSchoolUnderHeader{
     display: flex;
-    text-align: center;
+    justify-content: center;
 }
 
 .afterSchoolImages{
@@ -141,8 +156,67 @@ iframe{
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #1B5E42;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 1%;
+    margin-left: 1%;
 }
+
 .boxAfterSchoolWork{
+    margin-top: 3%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: #133C2B;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 92%;
+    }
+
+    .schoolInfoWrapper {
+        flex-direction: column;
+    }
+
+    .boxAfterSchoolWork {
+        grid-template-columns: 1fr;
+    }
+
+    .spanOpenDag {
+        font-size: 28px;
+    }
+
+    header {
+        padding-bottom: 4%;
+    }
+
+    .imgCurio {
+        max-width: 100%;
+    }
+
+    .afterSchoolImages {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .spanOpenDag {
+        font-size: 22px;
+    }
+
+    iframe {
+        width: 140px;
+        height: 250px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .afterSchoolWork {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
