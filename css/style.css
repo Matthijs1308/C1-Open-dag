@@ -104,9 +104,6 @@ iframe{
     background-color: rgb(119, 80, 80);
     padding: 20px;
     border-radius: 15px;
-}
-
-.schoolInfoText span {
     color: #F5C518;
     font-size: 1.1rem;
     line-height: 1.6;
@@ -189,6 +186,11 @@ iframe{
 p{
     margin-bottom: 2%;
 }
+
+.spanHide{
+    color: rgb(113, 80, 80);
+}
+
 @media (max-width: 768px) {
     .wrapper {
         width: 92%;
